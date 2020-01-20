@@ -13,12 +13,7 @@ gunzip Mus_musculus.GRCm38.cdna.all.fa.gz
 ```
 
 **1.Salmon index generation** <br>
-1.0 Install salmontools
-```
-cd /gpfs/group/pipkin/hdiao/Pkgs
-scp /Users/yolandatiao/Downloads/SalmonTools-master.zip hdiao@login01.scripps.edu:/gpfs/group/pipkin/hdiao/Pkgs
-unzip SalmonTools-master.zip
-```
+
 
 
 
