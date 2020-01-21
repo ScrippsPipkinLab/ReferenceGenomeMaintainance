@@ -21,6 +21,7 @@ gunzip Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz
 ```
 
 **1.Salmon index generation** <br>
+**Generated decoy-augmented transcriptomes according to updated guideline. Please use with selective-alignment (via the –validateMappings, –mimicBT2 or –mimicStrictBT2 flags) **
 1.0 Install Salmontools (JC did)
 1.1 Generate Decoy transcriptome
 ```
