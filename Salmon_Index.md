@@ -1,11 +1,11 @@
 # Salmon index
 
-### Updated: Jan 20, 2020
+## Updated: Jan 20, 2020
 > Huitian (Yolanda) Diao <br>
 > salmon/0.14.1
 > Location: /gpfs/group/pipkin/hdiao/ref_resources/GRCm38.salmon.index
 
-**0. Input genome reference file** <br>
+### **0. Input genome reference file** <br>
 Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html) <br>
 [Related topic: choice of ensembl genome version](https://bioinformatics.stackexchange.com/questions/540/what-ensembl-genome-version-should-i-use-for-alignments-e-g-toplevel-fa-vs-p)
 - Transcriptome: Mus_musculus.GRCm38.cdna.all.fa.gz, 11/19/19
@@ -21,7 +21,7 @@ wget ftp://ftp.ensembl.org/pub/release-99/fasta/mus_musculus/dna/Mus_musculus.GR
 gunzip Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz
 ```
 
-**1.Salmon index generation** <br>
+### **1.Salmon index generation** <br>
 **Generated decoy-augmented transcriptomes according to updated guideline. Please use with selective-alignment (via the –validateMappings, –mimicBT2 or –mimicStrictBT2 flags)** <br>
 1.0 Install Salmontools (JC did) <br>
 1.1 Generate Decoy transcriptome <br>
