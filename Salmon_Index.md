@@ -58,6 +58,8 @@ cDNA_fa=/gpfs/group/pipkin/hdiao/ref_resources/Mus_musculus.GRCm38.cdna.all.fa
 salmon index -t $cDNA_fa -i GRCm38.salmon.index --decoys decoys.txt -k 31
 ```
 
+**tgMap file for Alevin downloaded from [Ensembl](http://useast.ensembl.org/biomart/martview), GRCm38.p6**
+
 
 
 
