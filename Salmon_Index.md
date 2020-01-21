@@ -21,13 +21,26 @@ gunzip Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz
 ```
 
 **1.Salmon index generation** <br>
-1.0 Download Salmontools
-```
-scp /Users/yolandatiao/Downloads/SalmonTools-master.zip hdiao@login01.scripps.edu:/gpfs/group/pipkin/hdiao/Pkgs
-unzip SalmonTools-master.zip
-```
+1.0 Install Salmontools (JC did)
 1.1 Generate Decoy transcriptome
 ```
+#!/bin/bash
+#PBS -l nodes=1:ppn=8
+
+module load salmon
+module load mashmap
+module load bedtools
+
+wkdir=/gpfs/group/pipkin/hdiao/ref_resources
+cd $wkdir
+
+cDNA_fa=/gpfs/group/pipkin/hdiao/ref_resources/Mus_musculus.GRCm38.cdna.all.fa
+genome_gtf=/gpfs/group/pipkin/hdiao/ref_resources/Mus_musculus.GRCm38.99.gtf
+genome_fasta=/gpfs/group/pipkin/hdiao/ref_resources/Mus_musculus.GRCm38.dna_sm.toplevel.fa
+
+gdt_script=generateDecoyTranscriptome.sh
+
+$gdt_script -a $genome_gtf  -t $cDNA_fa -g $genome_fasta -o . -j 8
 ```
 
 
