@@ -3,6 +3,7 @@
 ### Updated: Jan 20, 2020
 > Huitian (Yolanda) Diao <br>
 > salmon/0.14.1
+> Location: /gpfs/group/pipkin/hdiao/ref_resources/GRCm38.salmon.index
 
 **0. Input genome reference file** <br>
 Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html) <br>
@@ -21,9 +22,9 @@ gunzip Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz
 ```
 
 **1.Salmon index generation** <br>
-**Generated decoy-augmented transcriptomes according to updated guideline. Please use with selective-alignment (via the –validateMappings, –mimicBT2 or –mimicStrictBT2 flags) **
-1.0 Install Salmontools (JC did)
-1.1 Generate Decoy transcriptome
+**Generated decoy-augmented transcriptomes according to updated guideline. Please use with selective-alignment (via the –validateMappings, –mimicBT2 or –mimicStrictBT2 flags)** <br>
+1.0 Install Salmontools (JC did) <br>
+1.1 Generate Decoy transcriptome <br>
 ```
 #!/bin/bash
 #PBS -l nodes=1:ppn=8
@@ -43,6 +44,20 @@ gdt_script=generateDecoyTranscriptome.sh
 
 $gdt_script -a $genome_gtf  -t $cDNA_fa -g $genome_fasta -o . -j 8
 ```
+1.2 Generate salmon index
+```
+#!/bin/bash
+
+module load salmon
+
+wk_dir=/gpfs/group/pipkin/hdiao/ref_resources
+
+cd $wk_dir
+
+cDNA_fa=/gpfs/group/pipkin/hdiao/ref_resources/Mus_musculus.GRCm38.cdna.all.fa
+salmon index -t $cDNA_fa -i GRCm38.salmon.index --decoys decoys.txt -k 31
+```
+
 
 
 
