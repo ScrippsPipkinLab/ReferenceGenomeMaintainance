@@ -6,13 +6,17 @@
 
 **0. Input genome reference file** <br>
 Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html)
-- Mus_musculus.GRCm38.cdna.all.fa.gz, 11/19/19
-- Mus_musculus.GRCm38.99.gtf.gz, 11/22/19
+- Transcriptome: Mus_musculus.GRCm38.cdna.all.fa.gz, 11/19/19
+- Gtf: Mus_musculus.GRCm38.99.gtf.gz, 11/22/19
+- Genome: Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz, 11/19/19
 ```
 cd /gpfs/group/pipkin/hdiao/ref_resources
 wget ftp://ftp.ensembl.org/pub/release-99/fasta/mus_musculus/cdna/Mus_musculus.GRCm38.cdna.all.fa.gz
 gunzip Mus_musculus.GRCm38.cdna.all.fa.gz
 wget ftp://ftp.ensembl.org/pub/release-99/gtf/mus_musculus/Mus_musculus.GRCm38.99.gtf.gz
+gunzip Mus_musculus.GRCm38.99.gtf.gz
+wget ftp://ftp.ensembl.org/pub/release-99/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz
+gunzip Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz
 ```
 
 **1.Salmon index generation** <br>
