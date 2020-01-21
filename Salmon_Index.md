@@ -5,7 +5,8 @@
 > salmon/0.14.1
 
 **0. Input genome reference file** <br>
-Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html)
+Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html) <br>
+[Related topic: choice of ensembl genome version](https://bioinformatics.stackexchange.com/questions/540/what-ensembl-genome-version-should-i-use-for-alignments-e-g-toplevel-fa-vs-p)
 - Transcriptome: Mus_musculus.GRCm38.cdna.all.fa.gz, 11/19/19
 - Gtf: Mus_musculus.GRCm38.99.gtf.gz, 11/22/19
 - Genome: Mus_musculus.GRCm38.dna_sm.toplevel.fa.gz, 11/19/19
