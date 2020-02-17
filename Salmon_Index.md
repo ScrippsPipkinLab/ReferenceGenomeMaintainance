@@ -2,8 +2,9 @@
 
 ## Updated: Jan 20, 2020
 > Huitian (Yolanda) Diao <br>
-> salmon/0.14.1
-> Location: /gpfs/group/pipkin/hdiao/ref_resources/GRCm38.salmon.index
+> salmon/0.14.1 <br>
+> HPC Location: /gpfs/group/pipkin/hdiao/ref_resources/GRCm38.salmon.index <br>
+> Pipkinlab Linux computer: ~/references
 
 ### **0. Input genome reference file** <br>
 Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html) <br>
