@@ -7,17 +7,17 @@
 
 ## 1. Input files
 Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html) <br>
-- DNA fasta file: release 99
-- GTF file: release 99
-`
+- DNA fasta file: release 99 <br>
+- GTF file: release 99 <br>
+```
 cd ~/references
 wget ftp://ftp.ensembl.org/pub/release-99/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
 wget ftp://ftp.ensembl.org/pub/release-99/gtf/mus_musculus/Mus_musculus.GRCm38.99.gtf.gz
 gunzip *.gz
-`
+```
 
 ## 2. Build reference genome
-`
+```
 cellranger mkgtf Mus_musculus.GRCm38.99.gtf Mus_musculus.GRCm38.99.filtered.gtf \
                  --attribute=gene_biotype:protein_coding \
                  --attribute=gene_biotype:lincRNA \
@@ -42,4 +42,4 @@ cellranger mkref --genome=GRCm38 \
                  --fasta=Mus_musculus.GRCm38.dna.primary_assembly.fa \
                  --genes=Mus_musculus.GRCm38.99.filtered.gtf \
                  --ref-version=3.1.0
-`
+```
