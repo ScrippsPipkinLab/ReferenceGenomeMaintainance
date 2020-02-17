@@ -2,7 +2,7 @@
 
 ## Updated: Feb 17, 2020
 > Huitian (Yolanda) Diao <br>
-> cellranger-3.1.0
+> cellranger-3.1.0 <br>
 > Location: Pipkinlab Linux computer: ~/references
 
 ## 1. Input files
