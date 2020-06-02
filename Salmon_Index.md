@@ -3,7 +3,7 @@
 ## Updated: Jun 2nd, 2020 (updated hs, not mm)
 > Huitian (Yolanda) Diao <br>
 > salmon/0.14.1 <br>
-> HPC Location: /gpfs/group/pipkin/hdiao/ref_resources/GRCm38.salmon.index <br>
+> HPC Location: /gpfs/group/pipkin/hdiao/ref_resources <br>
 > Pipkinlab Linux computer: ~/references
 
 ## Mus Musclus
