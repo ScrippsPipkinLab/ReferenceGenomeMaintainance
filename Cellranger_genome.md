@@ -83,7 +83,7 @@ cellranger mkgtf Homo_sapiens.GRCh38.100.gtf Homo_sapiens.GRCh38.100.filtered.gt
                    
 cellranger mkref --genome=GRCh38 \
                  --fasta=Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa \
-                 --genes=Homo_sapiens.GRCh38.100.filtered.gtfs \
+                 --genes=Homo_sapiens.GRCh38.100.filtered.gtf \
                  --ref-version=3.1.0
 ```
 
