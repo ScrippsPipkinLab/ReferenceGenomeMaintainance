@@ -56,6 +56,9 @@ Download from [Ensembl](http://useast.ensembl.org/info/data/ftp/index.html) <br>
 #!/bin/bash
 # Filter gtf 
 # https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references#mkgtf
+
+module load cellranger
+
 cellranger mkgtf Homo_sapiens.GRCh38.100.gtf Homo_sapiens.GRCh38.100.filtered.gtf\
                    --attribute=gene_biotype:protein_coding \
                    --attribute=gene_biotype:lincRNA \
