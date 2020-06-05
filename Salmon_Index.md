@@ -98,12 +98,12 @@ $gdt_script -a $genome_gtf  -t $cDNA_fa -g $genome_fasta -o . -j 8
 
 module load salmon
 
-wk_dir=/gpfs/group/pipkin/hdiao/ref_resources
+wk_dir=/gpfs/group/pipkin/hdiao/ref_resources/hs
 
 cd $wk_dir
 
-cDNA_fa=/gpfs/group/pipkin/hdiao/ref_resources/Mus_musculus.GRCm38.cdna.all.fa
-salmon index -t $cDNA_fa -i GRCm38.salmon.index --decoys decoys.txt -k 31
+cDNA_fa=/gpfs/group/pipkin/hdiao/ref_resources/hs/Homo_sapiens.GRCh38.cdna.all.fa
+salmon index -t $cDNA_fa -i GRCh38.salmon.index --decoys decoys.txt -k 31
 ```
 
 
