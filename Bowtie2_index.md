@@ -32,3 +32,23 @@ bowtie2-build Mus_musculus.GRCm38.dna.toplevel.fa GRCm38_bowtie2
 cd /gpfs/group/pipkin/hdiao/ref_resources/hs/release100
 bowtie2-build Homo_sapiens.GRCh38.dna.toplevel.fa GRCh38_bowtie2
 ```
+
+```
+Fatal Python error: Py_Initialize: Unable to get the locale encoding
+  File "/opt/applications/python/2.7.11/gnu/lib/python2.7/encodings/__init__.py", line 123
+    raise CodecRegistryError,\
+                            ^
+SyntaxError: invalid syntax
+
+Current thread 0x00007feed3703740 (most recent call first):
+/var/spool/slurm/d/job276169/slurm_script: line 7: 26458 Aborted                 bowtie2-build Mus_musculus.GRCm38.dna.toplevel.fa GRCm38_bowtie2
+
+Fatal Python error: Py_Initialize: Unable to get the locale encoding
+  File "/opt/applications/python/2.7.11/gnu/lib/python2.7/encodings/__init__.py", line 123
+    raise CodecRegistryError,\
+                            ^
+SyntaxError: invalid syntax
+
+Current thread 0x00007f22eff55740 (most recent call first):
+/var/spool/slurm/d/job276169/slurm_script: line 11: 26459 Aborted                 bowtie2-build Homo_sapiens.GRCh38.dna.toplevel.fa GRCh38_bowtie2
+```
